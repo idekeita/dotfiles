@@ -1,0 +1,61 @@
+[user]
+        name = idekeita
+        email = hoge@gmail.com
+
+[alias]
+    g  = git
+    be = bundle exec
+    ci = commit
+    cim = commit -m
+    st = status --ignore-submodules=dirty
+    co = checkout
+    url = config --get remote.origin.url
+    pr = !git pull --rebase origin `git rev-parse --abbrev-ref HEAD`
+    rbm = rebase master
+    lp = log -p
+    ls = log --stat
+    lg= log --decorate
+    lgg= log --decorate --oneline --graph
+    wd= diff --word-diff
+    gr= grep --line-number --show-function --color --heading --break
+
+    b = branch
+    p = !git push origin `git rev-parse --abbrev-ref HEAD`
+    rmm = !git branch --merged | grep -v \\* | xargs -I % git branch -d %
+    bm = branch --merged
+
+    d = diff
+    ds = diff --staged
+
+    fo = fetch origin
+    ro = rebase origin
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    interactvie = auto
+    grep = auto
+[status]
+    diff = auto
+[branch]
+    diff = auto
+[core]
+    excludesfile = ~/.gitignore
+    autocrlf = input
+        quotepath = true
+        editor = vim
+        precomposeunicode = true
+[push]
+    default = tracking
+
+[merge]
+[pr-release]
+    token = hoge
+[pager]
+ log  = (diff-highlight 2>/dev/null || cat) | ${PAGER:-less}
+  show = (diff-highlight 2>/dev/null || cat) | ${PAGER:-less}
+  diff = (diff-highlight 2>/dev/null || cat) | ${PAGER:-less}
+[diff]
+        compactionHeuristic = true
+[interactive]
+        diffFilter = (diff-highlight 2>/dev/null || cat)
