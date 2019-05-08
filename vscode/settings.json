@@ -1,0 +1,21 @@
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.editor.enablePreview": false,
+    "files.autoSave": "afterDelay",
+    "editor.tabSize": 2,
+    "editor.multiCursorModifier": "alt",
+    "workbench.sideBar.location": "left",
+    "workbench.action.sideBarFocus": true,
+    "vim.useSystemClipboard": true,
+    "files.autoGuessEncoding": true,
+    "window.zoomLevel": -1,
+    "editor.renderControlCharacters": true,
+    "ruby.lint": {
+        "rubocop": true
+    },
+    "files.insertFinalNewline": true,
+    "markdown.extension.showExplorer": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
+}
